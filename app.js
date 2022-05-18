@@ -10,24 +10,31 @@ const da = document.querySelector("#da")
 const es = document.querySelector("#es")
 const fr = document.querySelector("#fr")
 const zh = document.querySelector("#zh")
+const ziel = document.querySelector(".dropbtn")
 
 de.addEventListener('click',() =>{
-    targetlang="&target_lang=DE"
+    targetlang="&target_lang=DE";
+    ziel.innerHTML="Deutsch"
 })
 en.addEventListener('click',() =>{
-    targetlang="&target_lang=EN"
+    targetlang="&target_lang=EN";
+    ziel.innerHTML="Englisch"
 })
 da.addEventListener('click',() =>{
-    targetlang="&target_lang=DA"
+    targetlang="&target_lang=DA";
+    ziel.innerHTML="Dänisch";
 })
 es.addEventListener('click',() =>{
-    targetlang="&target_lang=ES"
+    targetlang="&target_lang=ES";
+    ziel.innerHTML="Spanisch";
 })
 fr.addEventListener('click',() =>{
-    targetlang="&target_lang=FR"
+    targetlang="&target_lang=FR";
+    ziel.innerHTML="Französisch";
 })
 zh.addEventListener('click',() =>{
-    targetlang="&target_lang=ZH"
+    targetlang="&target_lang=ZH";
+    ziel.innerHTML="Chinesisch";
 })
 console.log(targetlang)
 let translated = document.querySelector('#translated')
