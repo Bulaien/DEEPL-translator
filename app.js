@@ -11,6 +11,7 @@ const es = document.querySelector("#es")
 const fr = document.querySelector("#fr")
 const zh = document.querySelector("#zh")
 const ziel = document.querySelector(".dropbtn")
+const del = document.querySelector("#del")
 
 de.addEventListener('click',() =>{
     targetlang="&target_lang=DE";
@@ -36,6 +37,11 @@ zh.addEventListener('click',() =>{
     targetlang="&target_lang=ZH";
     ziel.innerHTML="Chinesisch";
 })
+
+del.addEventListener('click', () => {
+    document.querySelector("#translate").value =""
+    document.querySelector("#translated").value =""
+} )
 console.log(targetlang)
 let translated = document.querySelector('#translated')
 btn.addEventListener('click',async function getTranslation() {
@@ -45,9 +51,9 @@ btn.addEventListener('click',async function getTranslation() {
     let data = await response.json()
    
 translated.value=(data.translations[0].text)
-    
+console.log(data)
 })
-console.log(trans)
+
 
 
 

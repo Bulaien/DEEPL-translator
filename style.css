@@ -82,9 +82,26 @@ img {
     cursor: pointer;
   }
   
-  .dropdown-content p:hover {background-color: #ddd;}
+  .dropdown-content p:hover {
+      background-color: #ddd;
+    }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
   /*.dropdown:hover .dropdown-content:active {display: none;}*/
   
-  .dropdown:hover .dropbtn {background-color: #052c49;}
+  .dropdown:hover .dropbtn {
+      background-color: #052c49;
+    }
+
+    #del {
+        background-color: #052c49;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        font-weight:bold;
+      }
