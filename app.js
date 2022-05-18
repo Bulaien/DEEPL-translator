@@ -14,7 +14,7 @@ const zh = document.querySelector("#zh")
 de.addEventListener('click',() =>{
     targetlang="&target_lang=DE"
 })
-en.addEventListener('select',() =>{
+en.addEventListener('click',() =>{
     targetlang="&target_lang=EN"
 })
 da.addEventListener('click',() =>{
